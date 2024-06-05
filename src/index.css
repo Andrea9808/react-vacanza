@@ -1,13 +1,57 @@
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: beige;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card {
+  width: 45%;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px 5px 0 0;
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: 70%;
+  }
+
+  .card img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+
+  .card img {
+    height: 200px;
+  }
+}
+
+/* BUTTON */
+.button{
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(153, 153, 183);
 }
